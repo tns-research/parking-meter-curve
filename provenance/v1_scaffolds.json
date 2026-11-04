@@ -1,0 +1,22 @@
+[
+  {
+    "id": "S1",
+    "text": "Apply a constraints-first approach before optimizing anything. First list hard constraints that cannot be violated, then list preferences that can be traded off. Treat hard constraints as filters, not weighted variables. Eliminate any option that fails a necessary condition even if it is cheaper, greener, or faster. Only then compare the remaining feasible options."
+  },
+  {
+    "id": "S2",
+    "text": "Use means-end analysis. Define the final goal state in one sentence, then work backward to the immediate prior state required for that goal. Identify the dependency chain explicitly and test each option against that chain. If an option cannot produce the required prior state, classify it as infeasible rather than suboptimal. Compare only options that preserve the causal chain end-to-end."
+  },
+  {
+    "id": "S3",
+    "text": "Before answering, test whether you are replacing the real question with an easier proxy question. Write the true objective in one sentence, then name tempting proxy metrics (for example fuel, distance, ecology, convenience). Verify your recommendation satisfies the true objective directly, not the proxy. If there is mismatch, revise the answer. Conclude with one sentence that states why the selected option is goal-valid."
+  },
+  {
+    "id": "S4",
+    "text": "Run a concrete mental simulation of each option as if you are physically doing it now. Describe the first three actions and what objects are present at each step. Check whether the required object and agent are at the destination when action must occur. If the sequence stalls because a required object is missing, mark the option infeasible. Choose the option whose simulation completes without missing-state breaks."
+  },
+  {
+    "id": "S5",
+    "text": "Frame the situation as a causal system, not just a binary preference. Define system boundary, entities, and required interactions. Map which entities must interact directly for the goal to happen and what preconditions are required for those interactions. Evaluate each option against this map before discussing efficiency. Output the chosen option and the single most critical causal dependency it satisfies."
+  }
+]

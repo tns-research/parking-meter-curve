@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "source": "S1, S2, S3, S4, S5 copied verbatim from v1 data/scaffolds.json",
+    "length_rule": "PLACEBO and PRECOND within 20% of mean S2/S4/S5 word count (tests/test_design.py)"
+  },
+  "scaffolds": {
+    "S0": null,
+    "S1": "Apply a constraints-first approach before optimizing anything. First list hard constraints that cannot be violated, then list preferences that can be traded off. Treat hard constraints as filters, not weighted variables. Eliminate any option that fails a necessary condition even if it is cheaper, greener, or faster. Only then compare the remaining feasible options.",
+    "S2": "Use means-end analysis. Define the final goal state in one sentence, then work backward to the immediate prior state required for that goal. Identify the dependency chain explicitly and test each option against that chain. If an option cannot produce the required prior state, classify it as infeasible rather than suboptimal. Compare only options that preserve the causal chain end-to-end.",
+    "S3": "Before answering, test whether you are replacing the real question with an easier proxy question. Write the true objective in one sentence, then name tempting proxy metrics (for example fuel, distance, ecology, convenience). Verify your recommendation satisfies the true objective directly, not the proxy. If there is mismatch, revise the answer. Conclude with one sentence that states why the selected option is goal-valid.",
+    "S4": "Run a concrete mental simulation of each option as if you are physically doing it now. Describe the first three actions and what objects are present at each step. Check whether the required object and agent are at the destination when action must occur. If the sequence stalls because a required object is missing, mark the option infeasible. Choose the option whose simulation completes without missing-state breaks.",
+    "S5": "Frame the situation as a causal system, not just a binary preference. Define system boundary, entities, and required interactions. Map which entities must interact directly for the goal to happen and what preconditions are required for those interactions. Evaluate each option against this map before discussing efficiency. Output the chosen option and the single most critical causal dependency it satisfies.",
+    "PLACEBO": "Write your answer in clear, plain language. Use short paragraphs and avoid unnecessary jargon. Use complete sentences and avoid bullet points unless a list is clearly needed. Address the person directly and keep a friendly, neutral tone. Do not add disclaimers unless they are essential. Keep the response well organized so it is easy to read on a phone screen. Finish with a short, direct recommendation.",
+    "PRECOND": "Before choosing, list every condition that must still be true at the moment the goal is achieved, including where each object, vehicle and person must be. For each option, check whether carrying it out would break any of those conditions, even as a side effect of the travel itself. Discard any option that breaks a condition, however fast or convenient it is. Then recommend the remaining option."
+  }
+}

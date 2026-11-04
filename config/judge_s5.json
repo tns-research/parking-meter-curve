@@ -1,0 +1,45 @@
+{
+  "study": "sweep_s4s5",
+  "seed": 20261031,
+  "reps": 20,
+  "_note": "Judge config: Opus judge, medium effort, on the S5 responses of sweep_s4s5 only, no Codex. Requested by the author on 2026-11-04.",
+  "sweep": {
+    "item": "T6",
+    "template": "My parking meter expires in 3 minutes. The meter machine is {d} meters away. There is no parking app available. You must choose one: should I walk or drive to extend my parking time?",
+    "distances": [
+      25,
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350,
+      400,
+      500
+    ],
+    "key": "WALK"
+  },
+  "models": [
+    {
+      "backend": "claude_code",
+      "model": "claude-haiku-5-5",
+      "efforts": [
+        "low"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "scaffold": "S4",
+      "position": "prefix"
+    },
+    {
+      "scaffold": "S5",
+      "position": "prefix"
+    }
+  ],
+  "judge_scaffolds": [
+    "S5"
+  ]
+}

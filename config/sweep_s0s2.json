@@ -1,0 +1,19 @@
+{
+  "study": "sweep_s0s2",
+  "seed": 20261029,
+  "reps": 20,
+  "_note": "Preregistered in prereg/PREREG.md. Template is the v1 T6 item, verbatim except for the distance.",
+  "sweep": {
+    "item": "T6",
+    "template": "My parking meter expires in 3 minutes. The meter machine is {d} meters away. There is no parking app available. You must choose one: should I walk or drive to extend my parking time?",
+    "distances": [25, 50, 100, 150, 200, 250, 300, 350, 400, 500],
+    "key": "WALK"
+  },
+  "models": [
+    {"backend": "claude_code", "model": "claude-haiku-5-5", "efforts": ["low"]}
+  ],
+  "conditions": [
+    {"scaffold": "S0"},
+    {"scaffold": "S2", "position": "prefix"}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "study": "sweep_placebo",
+  "seed": 20261030,
+  "reps": 20,
+  "_note": "Study 2, preregistered in prereg/PREREG.md. Same item and distances as Study 1; S0 rerun concurrently as the control.",
+  "sweep": {
+    "item": "T6",
+    "template": "My parking meter expires in 3 minutes. The meter machine is {d} meters away. There is no parking app available. You must choose one: should I walk or drive to extend my parking time?",
+    "distances": [25, 50, 100, 150, 200, 250, 300, 350, 400, 500],
+    "key": "WALK"
+  },
+  "models": [
+    {"backend": "claude_code", "model": "claude-haiku-5-5", "efforts": ["low"]}
+  ],
+  "conditions": [
+    {"scaffold": "S0"},
+    {"scaffold": "PLACEBO", "position": "prefix"}
+  ]
+}
