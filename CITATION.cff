@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "parking-meter-curve: data and code for Ask an AI to Think and It Tells You to Walk"
+type: software
+authors:
+  - family-names: Sitjar
+    given-names: Théo Nicolas
+    orcid: "https://orcid.org/0009-0002-6728-0169"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/tns-research/parking-meter-curve"
+keywords:
+  - large language models
+  - reasoning scaffolds
+  - prompting
+  - evaluation
