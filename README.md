@@ -2,6 +2,8 @@
 
 Data and code for *Ask an AI to Think and It Tells You to Walk: Reasoning Scaffolds Shift the Walk/Drive Tipping Point on a Parking-Meter Dilemma* (Théo Nicolas Sitjar, 2026). The paper will be linked here once published.
 
+Data and code: [doi:10.5281/zenodo.24061763](https://doi.org/10.5281/zenodo.24061763) (v1.0). All versions: [doi:10.5281/zenodo.24061762](https://doi.org/10.5281/zenodo.24061762).
+
 ## The question
 
 > My parking meter expires in 3 minutes. The meter machine is **{d}** meters away. There is no parking app available. You must choose one: should I walk or drive to extend my parking time?
